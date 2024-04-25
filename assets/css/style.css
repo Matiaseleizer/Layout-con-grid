@@ -1,0 +1,32 @@
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 10em auto;
+    grid-template-rows: 3rem auto 3rem;
+    grid-template-areas: 
+    'navbar navbar'
+    'asidebar main'
+    'footer footer';
+    
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: #EE6C4D;
+}
+.asidebar{
+    grid-area: asidebar;
+    background-color: #98C1D9;
+}
+.main{
+    grid-area: main; 
+    background-color: #E0FBFC;
+}
+.footer{
+    grid-area: footer;
+    background-color: #3D5A80;
+}
+.box{
+    border: solid 1px black;
+    
+}
