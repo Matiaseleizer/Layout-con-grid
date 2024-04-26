@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    height: auto;
+}
 .grid-container{
     display: grid;
-    height: 100vh;
+    height: 100%;
     grid-template-columns: 10em auto;
     grid-template-rows: 3rem auto 3rem;
     grid-template-areas: 
@@ -13,6 +19,10 @@
 .navbar{
     grid-area: navbar;
     background-color: #EE6C4D;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    
 }
 .asidebar{
     grid-area: asidebar;
@@ -21,12 +31,101 @@
 .main{
     grid-area: main; 
     background-color: #E0FBFC;
+    padding-top: 2rem;
+    padding-bottom: 6em;
 }
 .footer{
     grid-area: footer;
     background-color: #3D5A80;
 }
 .box{
-    border: solid 1px black;
+    border: solid 1px #E0FBFC;
     
 }
+
+.grid-container2{
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    grid-template: 
+    "item1 item2 item3" auto
+    "item4 item5 item6" auto /
+    auto   auto   auto;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.asidebar{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.categoria{
+    color: grey;
+}
+
+.titulo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pie{
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    margin-bottom: 0%;
+    width: 200px;
+}
+
+.card .item1 h6{
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+}
+.card .item2 h6{
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+}
+.card .item3 h6{
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+}
+.card .item4 h6{
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+}
+.card .item5 h6{
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+}
+.card .item6 h6{
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+}
+.card .footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3px;
+    color: white;
+    background-color: #98C1D9;
+}
+
+.card{
+    margin-bottom: 2rem;
+}
+
+
+
